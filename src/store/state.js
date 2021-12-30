@@ -6,7 +6,8 @@ const state = {
   playing: false, // 是否播放
   palyMode: PLAY_MODE.sequence, // 顺序播放
   currentIndex: 0, // 当前索引
-  fullScreen: false
+  fullScreen: false, // 是否全屏
+  favoriteList: [] // 喜欢列表
 }
 
 export default state
