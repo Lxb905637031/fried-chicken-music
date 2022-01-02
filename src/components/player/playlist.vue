@@ -66,6 +66,7 @@
           text="是否清空播放列表？"
           confirm-btn-text="清空"
         />
+        <add-song ref="addSongRef" />
       </div>
     </transition>
   </teleport>
@@ -73,6 +74,7 @@
 <script>
 import Scroll from '@/components/base/scroll/scroll'
 import Confirm from '@/components/base/confirm/confirm'
+import AddSong from '@/components/add-song/add-song'
 import { ref, computed, nextTick, watch } from 'vue'
 import { useStore } from 'vuex'
 import useMode from './use-mode'
@@ -81,7 +83,8 @@ export default {
   name: 'playlist',
   components: {
     Scroll,
-    Confirm
+    Confirm,
+    AddSong
   },
   setup() {
     const visible = ref(false)
