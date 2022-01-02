@@ -35,6 +35,14 @@ const mutations = {
       }
       return item
     })
+  },
+  // 设置搜索历史
+  setHistoty(state, searches) {
+    state.searchHistory = searches
+  },
+  // 设置播放历史
+  setPlayHistory(state, songs) {
+    state.playHistory = songs
   }
 }
 
